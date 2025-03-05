@@ -1,0 +1,52 @@
+.home_main {
+    /* display: flex; */
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.home_greeting {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.home_picture {
+    height: 240px;
+    width: auto;
+}
+
+.home_greeting_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.home_hi,
+.home_name {
+    font-family: "UpAndDown", sans-serif;
+    font-size: 100px;
+    font-weight: 100;
+}
+
+.home_name {
+    color: #aa5959;
+}
+
+.home_hi {
+    color: transparent;
+    -webkit-text-stroke: 3px #aa5959;
+}
+
+.home_about_container {
+    width: 65%;
+}
+
+.home_about_text {
+    padding-top: 1%;
+    font-family: "WarungKopi", sans-serif;
+    font-size: 28px;
+    text-align: center;
+    color: #616161;
+}

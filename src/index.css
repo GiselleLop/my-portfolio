@@ -1,0 +1,65 @@
+@font-face {
+	font-family: "KGRedHands";
+	src: url("../src/assets/fonts/KGRedHands.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "UpAndDown";
+	src: url("../src/assets/fonts/UpandDownRough.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "WarungKopi";
+	src: url("../src/assets/fonts/WarungKopi.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: "KGSorry";
+	src: url("../src/assets/fonts/KGSorryNotSorryChub.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+section {
+	height: 100vh;
+	min-height: 100vh;
+	scroll-snap-align: start;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+main {
+	scroll-snap-type: y mandatory;
+	overflow-y: scroll;
+	height: 100vh;
+}
+
+
+
+/* 
+html,
+body,
+#root {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow: hidden;
+} */
+
+/* body {
+	height: 200vh;
+	overflow: hidden;
+} */

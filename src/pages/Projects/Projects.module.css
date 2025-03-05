@@ -1,0 +1,11 @@
+.projects_main {
+    /* flex-direction: column;
+    height: 260vh;
+    gap: 2em; */
+
+    flex-direction: column;
+    height: max-content;
+    gap: 2em;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}

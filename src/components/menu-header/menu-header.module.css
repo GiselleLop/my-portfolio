@@ -1,0 +1,78 @@
+.menu_container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #ffc6d9;
+	padding: 1.5% 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+	transition: all 0.5s ease;
+}
+
+
+/* .menu_container {
+	display: flex;
+	align-items: start;
+	justify-content: center;
+	padding: 1.8% 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+	transition: all 0.5s ease;
+	background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300"><path fill="%23ffc6d9"  d="M0,128L80,154.7C160,181,320,235,480,234.7C640,235,800,181,960,181.3C1120,181,1280,235,1360,261.3L1440,288L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>');
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size: 100% auto;
+	width: 100%;
+	height: 25%;
+} */
+
+.scrolled_header {
+	width: 60%;
+	align-self: center;
+	justify-self: center;
+	margin: 10px 20%;
+	border-radius: 40px;
+
+	/* extra para onmdas */
+	/* height: min-content;
+	background: none;
+	background-color: #ffc6d9; */
+
+}
+
+
+.button_container {
+	display: flex;
+	gap: 39px;
+}
+
+.menu_button {
+	background-color: white;
+	font-size: 1.2em;
+	padding: 1% 1.8em;
+	border: transparent;
+	border-radius: 30px;
+	color: #616161;
+	font-family: "KGRedHands", sans-serif;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.selected {
+	background-color: #AA5959;
+	color: white;
+}
+
+.menu_button:hover {
+	background-color: #d48b8b;
+	color: white;
+	transform: scale(1.1);
+	transition: transform 0.3s ease, background-color 0.3s ease;
+}

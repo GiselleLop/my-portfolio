@@ -1,0 +1,128 @@
+.project_container_main {
+    background-color: rgba(255, 242, 248, 0.5);
+    width: 80%;
+    height: 180px;
+    position: relative;
+    overflow: visible;
+    border: solid 3px #FFC6D9;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_on {
+    width: 95%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.project_text_container {
+    width: 55%;
+    margin-right: 3em;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.project_title {
+    font-family: "UpAndDown", sans-serif;
+    color: #AA5959;
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.project_resume {
+    font-family: "WarungKopi", sans-serif;
+    font-size: 18px;
+    color: #616161;
+}
+
+.star {
+    position: absolute;
+    height: auto;
+    z-index: 1;
+    animation: rotateAndScale 1s ease-in-out infinite;
+}
+
+.star_bigTop {
+    width: 53px;
+    top: -33px;
+    right: -30px;
+}
+
+.star_smallTop {
+    width: 20px;
+    top: 28px;
+    right: -30px;
+}
+
+.star_bigBottom {
+    width: 53px;
+    bottom: -20px;
+    left: -31px
+}
+
+.star_smallBottom {
+    width: 20px;
+    bottom: 30px;
+    left: -30px;
+}
+
+.button_container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button_link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    background-color: #FFC6D9;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: black;
+}
+
+.button_text {
+    font-family: "KGSorry";
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.button_link:hover {
+    background-color: #AA5959;
+    color: white;
+    transform: scale(1.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.project_image_container {
+    position: relative;
+    width: 30%;
+    height: 90%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes rotateAndScale {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+
+    50% {
+        transform: scale(1.2) rotate(10deg);
+    }
+
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+}
