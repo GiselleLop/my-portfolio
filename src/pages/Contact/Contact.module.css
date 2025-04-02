@@ -1,0 +1,10 @@
+/* .contact_main {
+    flex-direction: column;
+    height: max-content;
+    gap: 2em;
+    padding-top: 10%;
+    padding-bottom: 5%;
+} */
+.contact_main {
+    gap: 60px;
+}

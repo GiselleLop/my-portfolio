@@ -1,0 +1,50 @@
+.social_cont_main {
+    background-color: #FFE8F0;
+    width: min-content;
+    color: #616161;
+    gap: 10px;
+    display: flex;
+    padding: 40px 35px;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-top: 6%;
+}
+.cont_email, .socialm_cont {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px
+}
+.title_sub {
+    font-family: "KGSorry";
+    font-weight: 100;
+    font-size: 25px;
+    letter-spacing: 0.5px;
+}
+.email_content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+
+.email {
+    font-family: "WarungKopi";
+    font-weight: 100;
+    font-size: 18px;
+    letter-spacing: 0.3px;
+}
+.icon_cont {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.social_icon {
+    color: #616161;
+}
+.social_icon:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+    color: #AA5959;
+}

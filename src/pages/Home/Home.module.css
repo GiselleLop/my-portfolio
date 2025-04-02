@@ -11,6 +11,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 35px;
 }
 
 .home_picture {
@@ -21,13 +22,15 @@
 .home_greeting_text {
     display: flex;
     flex-direction: column;
+    gap: 5px;
 }
 
 .home_hi,
 .home_name {
-    font-family: "UpAndDown", sans-serif;
-    font-size: 100px;
+    font-family: "Newake", sans-serif;
+    font-size: 80px;
     font-weight: 100;
+    letter-spacing: 2px;
 }
 
 .home_name {
@@ -36,7 +39,7 @@
 
 .home_hi {
     color: transparent;
-    -webkit-text-stroke: 3px #aa5959;
+    -webkit-text-stroke: 2.5px #aa5959;
 }
 
 .home_about_container {

@@ -1,3 +1,4 @@
+
 .menu_container {
 	display: flex;
 	flex-direction: column;
@@ -10,7 +11,7 @@
 	left: 0;
 	width: 100%;
 	z-index: 1000;
-	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+	/* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); */
 	transition: all 0.5s ease;
 }
 
@@ -35,7 +36,7 @@
 } */
 
 .scrolled_header {
-	width: 60%;
+	width: 65%;
 	align-self: center;
 	justify-self: center;
 	margin: 10px 20%;
@@ -56,15 +57,28 @@
 
 .menu_button {
 	background-color: white;
-	font-size: 1.2em;
 	padding: 1% 1.8em;
 	border: transparent;
 	border-radius: 30px;
-	color: #616161;
-	font-family: "KGRedHands", sans-serif;
+	color: #838383;
 	transition: background-color 0.3s, color 0.3s;
 }
 
+.text_btton {
+	padding: 3px 0 0 0;
+	font-size: 1.5em;
+	font-family: "Newake", sans-serif;
+	font-weight: 100;
+	letter-spacing: 1.2px;
+	text-align: center;
+    vertical-align: middle;
+}
+
+.selected_text {
+	font-size: 1.9em;
+	padding: 5px 0 0 0;
+
+}
 .selected {
 	background-color: #AA5959;
 	color: white;

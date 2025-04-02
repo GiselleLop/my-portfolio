@@ -34,7 +34,7 @@ export const MenuHeader = React.forwardRef<HTMLInputElement, MenuHeaderProps>(
 
 		return (
 			<>
-				<div className={`${style.menu_container} ${isScrolled ? style.scrolled_header : ""}`}>
+			<div className={`${style.menu_container} ${isScrolled ? style.scrolled_header : ""}`}>
 					<div className={style.button_container}>
 						{menuOptions.map((option) => (
 							<button
@@ -42,12 +42,15 @@ export const MenuHeader = React.forwardRef<HTMLInputElement, MenuHeaderProps>(
 								className={`${style.menu_button} ${activeButton === option.value ? style.selected : ""}`}
 								onClick={() => handleButtonClick(option.value)}
 							>
-								{option.name}
+								
+								<h1 className={`${style.text_btton} ${activeButton === option.value ? style.selected_text : ""}`}>{option.name}</h1>
 							</button>
 						))}
 					</div>
 
 				</div>
+			
+				
 
 			</>
 

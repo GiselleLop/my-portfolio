@@ -27,6 +27,14 @@
 	font-style: normal;
 }
 
+
+@font-face {
+	font-family: "Newake";
+	src: url("../src/assets/fonts/NewakeFont.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
 * {
 	padding: 0;
 	margin: 0;

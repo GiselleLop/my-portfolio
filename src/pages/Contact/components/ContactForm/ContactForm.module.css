@@ -1,0 +1,79 @@
+.contact_form_container_main {
+    display: flex;
+    flex-direction: column;
+    border: solid #FFC6D9 3px;
+    border-radius: 20px;
+    width: 25%;
+    height: min-content;
+    align-items: center;
+    justify-content: center;
+    padding: 35px 30px;
+    gap: 15px;
+    margin-top: 6%;
+}
+.form_cont {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+.cont_lab {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px
+}
+.title_container {
+    width: 100%;
+    text-align: center;
+    font-family: "Newake";
+}
+
+.title {
+    letter-spacing: 2px;
+    font-size: 40px;
+    color: #AA5959;
+    font-weight: 100;
+}
+.cont_lab>label {
+    font-family: "KGSorry";
+    font-weight: 100;
+    font-size: 20px;
+    color: #616161;
+}
+
+.input_form {
+    width: 95%;
+    padding: 0 2.5%;
+    background-color: #FFE8F0 ;
+    border: none;
+    height: 30px;
+    border-radius: 6px;
+    outline: none;
+}
+
+.submit_btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 50%;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 15px;
+    background-color: #AA5959;
+}
+.btn_text {
+    font-family: "KGSorry";
+    font-weight: 100;
+    font-size: 20px;
+    color: white;
+}
+
+.submit_btn:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease
+}

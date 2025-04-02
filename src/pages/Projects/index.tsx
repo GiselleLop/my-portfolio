@@ -3,6 +3,8 @@ import style from "./Projects.module.css";
 import textA from "../../assets/images/TextAnalyzer.png"
 import plantApp from "../../assets/images/plantApp.png"
 import DataLovers from "../../assets/images/DataLovers.png"
+import MovieChallenge from "../../assets/images/MovieChallengeWireframe.png"
+
 export const ProjectsPage = () => {
     return (
         <>
@@ -20,9 +22,10 @@ export const ProjectsPage = () => {
                 <ProjectContainer
                     title="Movie Challenge"
                     resume="Web application designed to explore the movie catalog of The Movie Database API V3."
-                    image={"ss"}
+                    image={MovieChallenge}
+                    isComputer={true}
                     starTop={false}
-                    siteLink="https://moviechallenge-by-giselle.netlify.app/movies"
+                    siteLink="https://movie-challenge-weld.vercel.app/"
                     repositoryLink="https://github.com/GiselleLop/Movie-Challenge-con-Angular"
                 />
                 <ProjectContainer
@@ -43,13 +46,13 @@ export const ProjectsPage = () => {
                     repositoryLink="https://github.com/GiselleLop/My-PlantApp"
                 />
                 <ProjectContainer
-                    title="Data Lovers – Rick y Morty"
+                    title="Rick y Morty (Data Lovers)"
                     resume="This web application allows users to view the characteristics of each character from the animated series “Rick & Morty” through cards."
                     image={DataLovers}
                     starTop={true}
                     isComputer={true}
-                    siteLink="https://gisellelop.github.io/Data-Lovers/src/"
-                    repositoryLink="https://github.com/GiselleLop/Data-Lovers.git"
+                    siteLink="https://rick-and-morty-dl.vercel.app/"
+                    repositoryLink="https://github.com/GiselleLop/Rick-and-Morty-DL.git"
                 />
                 <ProjectContainer
                     title="Text Analyzer"
