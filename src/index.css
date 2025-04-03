@@ -55,19 +55,24 @@ main {
 	height: 100vh;
 }
 
+.custom-title {
+	font-family: "KGSorry";
+	letter-spacing: 1px;
+	font-size: 22px;
+	font-weight: bold;
+}
 
-
-/* 
-html,
-body,
-#root {
-	margin: 0;
-	padding: 0;
-	height: 100%;
-	overflow: hidden;
-} */
-
-/* body {
-	height: 200vh;
-	overflow: hidden;
-} */
+.custom-popup {
+	font-family: "WarungKopi";
+}
+  
+.custom-confirm-button {
+	font-family: "KGSorry";
+	letter-spacing: 1px;
+	background-color: #AA5959;
+	font-size: 16px;
+}
+  
+.custom-confirm-button:hover {
+	background-color: #663838;
+}

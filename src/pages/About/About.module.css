@@ -11,7 +11,9 @@
         transform: scale(1) rotate(0deg);
     }
 }
-
+/* .about_main{
+    position:relative;
+} */
 .sub_title {
     font-family: "Newake", sans-serif;
     letter-spacing: 2px;
@@ -63,7 +65,7 @@
     width: 50%;
     background-color: rgba(255, 198, 217, 0.5);
     border-radius: 15px;
-    padding: 8px 20px;
+    /* padding: 8px 20px; */
     text-align: center;
     color: #616161;
     font-family: "KGRedHands", sans-serif;
@@ -71,7 +73,7 @@
 
 .about_resume {
     font-family: "WarungKopi", sans-serif;
-    font-size: 18px;
+    /* font-size: 18px; */
     text-align: center;
     color: #616161;
     text-align: justify;
@@ -106,4 +108,34 @@
     width: 20px;
     bottom: 30px;
     left: -30px;
+}
+
+
+
+/* //tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+ 
+}
+
+/* //pc */
+@media only screen and (min-width: 1025px) and (max-width: 1535px) {
+
+    .about_resume {
+        font-size: 18px;
+      
+    }
+    .skills_container>li {
+        padding: 8px 20px;
+
+    }
+}
+
+/* //pc 1536px */
+@media only screen and (min-width: 1536px) {
+    .about_resume {
+        font-size: 22px;  
+    }
+    .skills_container>li {
+        padding: 12px 30px;
+    }
 }

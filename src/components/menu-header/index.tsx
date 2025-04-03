@@ -34,8 +34,14 @@ export const MenuHeader = React.forwardRef<HTMLInputElement, MenuHeaderProps>(
 
 		return (
 			<>
-			<div className={`${style.menu_container} ${isScrolled ? style.scrolled_header : ""}`}>
-					<div className={style.button_container}>
+			<div 
+			className={style.menu_container}
+			//className={`${style.menu_container} ${isScrolled ? style.scrolled_header : ""}`}
+			>
+					<div 
+					//className={style.button_container}
+					className={`${style.button_container} ${isScrolled ? style.scrolled_header : ""}`}
+					>
 						{menuOptions.map((option) => (
 							<button
 								key={option.value}
@@ -49,12 +55,7 @@ export const MenuHeader = React.forwardRef<HTMLInputElement, MenuHeaderProps>(
 					</div>
 
 				</div>
-			
-				
-
 			</>
-
-
 		);
 	},
 );

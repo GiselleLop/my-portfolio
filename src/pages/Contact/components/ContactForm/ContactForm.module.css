@@ -3,19 +3,17 @@
     flex-direction: column;
     border: solid #FFC6D9 3px;
     border-radius: 20px;
-    width: 25%;
+    width: 23%;
     height: min-content;
     align-items: center;
     justify-content: center;
-    padding: 35px 30px;
-    gap: 15px;
-    margin-top: 6%;
+
 }
 .form_cont {
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 25px;
+    /* gap: 20px; */
     justify-content: center;
     align-items: center;
 }
@@ -23,7 +21,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 10px
+    /* gap: 8px */
 }
 .title_container {
     width: 100%;
@@ -59,12 +57,15 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    gap: 8px;
     width: 50%;
     border: none;
     border-radius: 6px;
     padding: 10px 15px;
     background-color: #AA5959;
+}
+.submit_btn_disabled {
+    background-color: #8d8d8d;
 }
 .btn_text {
     font-family: "KGSorry";
@@ -77,3 +78,54 @@
     transform: scale(1.1);
     transition: transform 0.3s ease
 }
+.error_message {
+    font-family: "WarungKopi";
+    font-weight: 100;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+    color: #AA5959;
+}
+.char_count {
+    font-family: "WarungKopi";
+    font-weight: 100;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    color: #616161;
+    align-self: flex-end;
+}
+
+/* tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+ 
+}
+
+/* pc */
+@media only screen and (min-width: 1025px) and (max-width: 1535px) {
+    .contact_form_container_main {
+        gap: 10px;
+        margin-top: 6.5%;
+        padding: 35px 30px;
+    }
+    .form_cont {
+        gap: 15px;
+    }
+    .cont_lab {
+        gap: 5px
+    }
+}
+
+/* pc 1536px */
+@media only screen and (min-width: 1536px) {
+    .contact_form_container_main {
+        gap: 20px;
+        margin-top: 6%;
+        padding: 45px 30px;
+    }
+    .form_cont {
+        gap: 30px;
+    }
+    .cont_lab {
+        gap: 10px
+    }
+}
+

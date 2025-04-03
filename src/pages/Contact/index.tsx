@@ -11,7 +11,7 @@ export const ContactPage = () => {
     
     return (
         <section id="contact" data-route="/contact" className={style.contact_main}>
-            <ContactForm onSendMessage={""}></ContactForm>
+            <ContactForm></ContactForm>
             <SocialMedia icons={socialMediaData}></SocialMedia>
         </section>
     );

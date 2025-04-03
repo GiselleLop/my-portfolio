@@ -31,7 +31,6 @@ export const AboutPage = () => {
                     </ul>
                 </div>
 
-
             </section>
         </>
     );

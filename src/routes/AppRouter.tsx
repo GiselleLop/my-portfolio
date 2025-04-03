@@ -5,6 +5,7 @@ import { AboutPage } from "../pages/About"
 import { useEffect, useState } from "react"
 import { ProjectsPage } from "../pages/Projects"
 import { ContactPage } from "../pages/Contact"
+import { ArrowBottom } from "../components/Arrow_bottom"
 
 const AppRouter = () => {
     const navigate = useNavigate();
@@ -61,6 +62,7 @@ const AppRouter = () => {
                 <ProjectsPage />
                 <ContactPage />
             </main>
+            <ArrowBottom idRoute={idRoute}></ArrowBottom>
         </>
     )
 }

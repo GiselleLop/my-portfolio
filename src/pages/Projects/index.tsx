@@ -9,7 +9,6 @@ export const ProjectsPage = () => {
     return (
         <>
             <section id="projects" data-route="/projects" className={style.projects_main}>
-                {/* <p>PROYECTYS</p> */}
                 <ProjectContainer
                     title="Burguer Queen"
                     resume="This web application, developed with the Angular framework, is designed for a fast food restaurant. Provides an efficient system for taking orders and subsequent management in the kitchen."

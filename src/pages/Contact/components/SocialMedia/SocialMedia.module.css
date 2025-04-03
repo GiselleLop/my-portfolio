@@ -4,10 +4,10 @@
     color: #616161;
     gap: 10px;
     display: flex;
-    padding: 40px 35px;
+    /* padding: 40px 35px; */
     flex-direction: column;
     border-radius: 10px;
-    margin-top: 6%;
+    /* margin-top: 6%; */
 }
 .cont_email, .socialm_cont {
     display: flex;
@@ -47,4 +47,26 @@
     transform: scale(1.2);
     transition: transform 0.3s ease;
     color: #AA5959;
+}
+
+/* tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+ 
+}
+
+/* pc */
+@media only screen and (min-width: 1025px) and (max-width: 1535px) {
+
+    .social_cont_main {   
+        padding: 40px 35px;
+        margin-top: 6.5%;
+    }
+}
+
+/* pc 1536px */
+@media only screen and (min-width: 1536px) {
+    .social_cont_main {   
+        padding: 40px 35px;
+        margin-top: 6;
+    }
 }
