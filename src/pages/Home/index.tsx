@@ -23,10 +23,6 @@ export const HomePage = () => {
       <div className={style.home_about_container}>
         <p className={style.home_about_text}>I am a web developer with a great passion for programming. With every line of code I write, I combine my creativity and initiative to design captivating and functional web experiences.</p>
       </div>
-
-      {/* <button className={style.button_arrow}>
-        <img src="..\src\assets\images\Arrow.png" className={style.arrow_img} />
-      </button> */}
      
     </section>
   );

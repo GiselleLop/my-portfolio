@@ -11,22 +11,28 @@
         transform: scale(1) rotate(0deg);
     }
 }
-/* .about_main{
-    position:relative;
-} */
+.about_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+    padding-top: 2%;
+}
+
 .sub_title {
     font-family: "Newake", sans-serif;
     letter-spacing: 2px;
-    font-size: 53px;
+    /* font-size: 40px; */
+    font-size: 240%;
     font-weight: 100;
     color: #aa5959;
 }
 
 .container_main {
-    width: 35%;
-    height: 70%;
-    margin-top: 5%;
-    gap: 6%;
+    width: 85%;
+    height: min-content;
+    gap: 9px;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -38,20 +44,27 @@
     display: flex;
     align-items: center;
     border-radius: 15px;
-    height: 70%;
 }
 
 .about_resume_container {
     border: solid 4px #FFC6D9;
     background-color: rgba(255, 242, 248, 0.5);
-    padding: 0 28px;
-    width: 55%;
-
+    padding: 20px 25px;
+    width: 60%;
+    height: min-content;
     position: relative;
     overflow: visible;
 }
+.about_resume {
+    font-family: "WarungKopi", sans-serif;
+    font-size: 85%;
+    text-align: center;
+    color: #616161;
+    text-align: justify;
+}
 
 .skills_container {
+    height: 100%;
     width: 70%;
     list-style: none;
     display: grid;
@@ -59,24 +72,18 @@
     grid-auto-rows: auto;
     justify-items: center;
     align-items: center;
+    row-gap: 12px;
+
 }
 
 .skills_container>li {
     width: 50%;
     background-color: rgba(255, 198, 217, 0.5);
     border-radius: 15px;
-    /* padding: 8px 20px; */
+    padding: 4px 20px;
     text-align: center;
     color: #616161;
     font-family: "KGRedHands", sans-serif;
-}
-
-.about_resume {
-    font-family: "WarungKopi", sans-serif;
-    /* font-size: 18px; */
-    text-align: center;
-    color: #616161;
-    text-align: justify;
 }
 
 .star {
@@ -110,16 +117,105 @@
     left: -30px;
 }
 
+/* mobile small */
+@media only screen and (min-width: 200px) and (max-width: 325px) {
+    .about_main {
+        padding-top: 6%;
+        gap: 1%;
+    }
+    
+    .container_main {
+        width: 100%;
+    }
+ 
+    .sub_title {
+        font-size: 30px;
+    }
+    .about_resume {
+        font-size: 11.5px;
+    }
+   
+    .about_resume_container {
+        width: 60%;
+        padding: 10px 15px;
+        height: min-content;
+    }
+    .skills_container>li {
+        padding: 4px 15px;
+       font-size: 13px;
+    }
 
+    .star_big1 {
+        width: 35px;
+        top: -20px;
+    }
+    
+    .star_small1 {
+        width: 15px;
+        top: 20px;
+        right: -25px;
+    }
+    
+    .star_big2 {
+        width: 35px;
+        bottom: -20px;
+        left: -18px
+    }
+    
+    .star_small2 {
+        width: 15px;
+        bottom: 20px;
+        left: -25px;
+    }
+}
 
 /* //tablets */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
- 
+    .about_resume_container {
+        padding: 25px 25px;
+        width: 50%;
+    }
+    .sub_title {
+        font-size: 53px;
+    }
+    .about_resume {
+        font-size: 25px;
+      
+    }
+    .skills_container>li {
+        padding: 8px 35px;
+       font-size: 20px;
+    }
+       
+    .skills_container {
+      width: 55%;
+    }
 }
 
-/* //pc */
-@media only screen and (min-width: 1025px) and (max-width: 1535px) {
 
+/* pc */
+@media only screen and (min-width: 1025px) and (max-width: 1535px) {
+    .sub_title {
+        font-size: 53px;
+    }
+    
+    .about_main {
+        flex-direction: row;
+        padding-top: 0%;
+        gap: 0px;
+    }
+    .container_main {
+        width: 35%;
+        height: 70%;
+        margin-top: 5%;
+        gap: 6%;
+    }
+    .about_resume_container {
+        padding: 0 28px;
+        height: 70%;
+        width: 55%;
+    }
+    
     .about_resume {
         font-size: 18px;
       
@@ -128,14 +224,49 @@
         padding: 8px 20px;
 
     }
+    
+    .skills_container {
+        width: 70%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        height: 70%;
+        row-gap: 0px;
+    }
 }
 
 /* //pc 1536px */
 @media only screen and (min-width: 1536px) {
+    .sub_title {
+        font-size: 53px;
+    }
+    .about_main {
+        flex-direction: row;
+        padding-top: 0%;
+        gap: 0px;
+    }
+    .container_main {
+        width: 35%;
+        height: 70%;
+        margin-top: 5%;
+        gap: 6%;
+    }
+    .about_resume_container {
+        padding: 0 28px;
+        height: 70%;
+        width: 55%;
+    }
+    
     .about_resume {
         font-size: 22px;  
     }
     .skills_container>li {
         padding: 12px 30px;
+    }
+    .skills_container {
+        height: 70%;
+        width: 70%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        row-gap: 0px;
     }
 }

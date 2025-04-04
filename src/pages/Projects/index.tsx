@@ -2,8 +2,9 @@ import { ProjectContainer } from "./components/ProjectContainer/indes";
 import style from "./Projects.module.css";
 import textA from "../../assets/images/TextAnalyzer.png"
 import plantApp from "../../assets/images/plantApp.png"
-import DataLovers from "../../assets/images/DataLovers.png"
-import MovieChallenge from "../../assets/images/MovieChallengeWireframe.png"
+import DataLovers from "../../assets/images/rick_and_morty.png"
+import MovieChallenge from "../../assets/images/movie_challenge.png"
+import burgueQ from "../../assets/images/burger_queen.png"
 
 export const ProjectsPage = () => {
     return (
@@ -12,7 +13,8 @@ export const ProjectsPage = () => {
                 <ProjectContainer
                     title="Burguer Queen"
                     resume="This web application, developed with the Angular framework, is designed for a fast food restaurant. Provides an efficient system for taking orders and subsequent management in the kitchen."
-                    image={"ss"}
+                    image={burgueQ}
+                    isComputer={true}
                     starTop={true}
                     siteLink="https://burguer-queen-api-client-eight.vercel.app/"
                     repositoryLink="https://github.com/GiselleLop/Burguer-Queen-API-Client.git"
@@ -45,7 +47,7 @@ export const ProjectsPage = () => {
                     repositoryLink="https://github.com/GiselleLop/My-PlantApp"
                 />
                 <ProjectContainer
-                    title="Rick y Morty (Data Lovers)"
+                    title="Rick y Morty"
                     resume="This web application allows users to view the characteristics of each character from the animated series “Rick & Morty” through cards."
                     image={DataLovers}
                     starTop={true}

@@ -33,16 +33,7 @@
 	height: 25%;
 } */
 
-.scrolled_header {
-	/* width: 65%; */
-	width: min-content !important;
-	align-self: center;
-	justify-self: center;
-	margin: 10px 0;
-	border-radius: 30px;
-	padding: 15px 35px !important
 
-}
 
 
 .button_container {
@@ -50,18 +41,31 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	gap: 39px;
-	padding: 1.5% 0;
+	gap: 10px;
+	padding: 4% 0;
 	/* height: 100%; */
 	width: 100%;
 	transition: all 0.5s ease;
 	background-color: #ffc6d9; 
 }
+.scrolled_header {
+	/* width: 65%; */
+	width: min-content !important;
+	align-self: center;
+	justify-self: center;
+	margin: 10px 0;
+	border-radius: 30px;
+	padding: 3% 5%;
+	/* padding: 15px 35px !important */
 
+}
 .menu_button {
+	display: flex;
+	align-items: center;
+	justify-content:center ;
 	background-color: white;
-	/* padding: 1% 1.8em; */
-	padding: 0.6em 1.8em;
+	padding: 0.2em 0.5em;
+	/* padding: 1% 2%; */
 	border: transparent;
 	border-radius: 30px;
 	color: #838383;
@@ -69,8 +73,8 @@
 }
 
 .text_btton {
-	padding: 3px 0 0 0;
-	font-size: 1.5em;
+	padding: 4px 0 0 0;
+	font-size: 1em;
 	font-family: "Newake", sans-serif;
 	font-weight: 100;
 	letter-spacing: 1.2px;
@@ -79,8 +83,8 @@
 }
 
 .selected_text {
-	font-size: 1.7em;
-	padding: 5px 0 0 0;
+	font-size: 1.2em;
+	padding: 4px 0 0 0;
 
 }
 .selected {
@@ -93,4 +97,72 @@
 	color: white;
 	transform: scale(1.1);
 	transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* //tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.button_container {
+		gap: 20px;
+		padding: 2% 0;
+	}
+	.menu_button {
+	
+		/* padding: 1% 1.8em; */
+		padding: 0.5em 1.5em;
+
+	}
+	.text_btton {
+		font-size: 1.5em;
+		padding: 3px 0 0 0;
+
+	}
+	.selected_text {
+		font-size: 1.7em;
+		padding: 5px 0 0 0;
+	
+	}
+	.scrolled_header {		
+		margin: 10px 0;
+		border-radius: 35px;
+		padding: 15px 25px !important
+	}
+	
+}
+/*
+/* //pc 
+@media only screen and (min-width: 1025px) and (max-width: 1535px) {
+  
+}
+
+ //pc 1536px 
+@media only screen and (min-width: 1536px) {
+   
+} */
+@media only screen and (min-width: 1025px) {
+	.button_container {
+		gap: 39px;
+		padding: 1.5% 0;
+	}
+	.menu_button {
+	
+		/* padding: 1% 1.8em; */
+		padding: 0.6em 1.8em;
+
+	}
+	.text_btton {
+		font-size: 1.5em;
+		padding: 3px 0 0 0;
+
+	}
+	.selected_text {
+		font-size: 1.7em;
+		padding: 5px 0 0 0;
+	
+	}
+	.scrolled_header {		
+		margin: 10px 0;
+		border-radius: 30px;
+		padding: 15px 35px !important
+	}
+	
 }

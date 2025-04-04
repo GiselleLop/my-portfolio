@@ -41,19 +41,21 @@ export const ProjectContainer = React.forwardRef<HTMLInputElement, ProjectContai
                         <p className={style.project_resume}>{resume}</p>
                     </div>
 
+                    <div className={style.computer_buttons_cont_main}>
+                    
                     <div className={style.button_container}>
                         <button
                             className={style.button_link}
                             onClick={() => window.open(siteLink, "_blank", "noopener,noreferrer")}
                         >
-                            <i className="pi pi-link" style={{ fontSize: '20px' }}></i>
+                            <i className={`pi pi-link ${style.icon_button}`}></i>
                             <h1 className={style.button_text}>View site</h1>
                         </button>
                         <button
                             className={style.button_link}
                             onClick={() => window.open(repositoryLink, "_blank", "noopener,noreferrer")}
                         >
-                            <i className="pi pi-github" style={{ fontSize: '20px' }}></i>
+                            <i className={`pi pi-github ${style.icon_button}`}></i>
                             <h1 className={style.button_text}>Repository</h1>
                         </button>
                     </div>
@@ -61,19 +63,12 @@ export const ProjectContainer = React.forwardRef<HTMLInputElement, ProjectContai
                     <div className={style.project_image_container}>
                         {isComputer ? (
                             <>
-                                <img src="..\src\assets\images\comp.png" style={{
-                                    height: "150px",
-                                    position: "absolute",
-                                    zIndex: 2,
-                                }} />
-                                <img src={image} style={{
-                                    height: "125px",
-                                    position: "relative",
-                                    zIndex: 1,
-                                }} />
+                                <img src={image} className={style.image_project}/>
                             </>
                         ) : null}
                     </div>
+                    </div>
+                    
                 </div>
 
             </div >

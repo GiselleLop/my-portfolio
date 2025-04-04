@@ -1,6 +1,6 @@
 .project_container_main {
     background-color: rgba(255, 242, 248, 0.5);
-    width: 80%;
+    width: 85%;
     height: 180px;
     position: relative;
     overflow: visible;
@@ -16,29 +16,37 @@
     height: 90%;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: start;
+    gap: 6px;
 }
 
 .project_text_container {
-    width: 55%;
-    margin-right: 3em;
     height: min-content;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
 }
 
 .project_title {
     font-family: "UpAndDown", sans-serif;
     color: #AA5959;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 100;
 }
 
 .project_resume {
     font-family: "WarungKopi", sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     color: #616161;
+}
+
+.computer_buttons_cont_main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .star {
@@ -48,34 +56,12 @@
     animation: rotateAndScale 1s ease-in-out infinite;
 }
 
-.star_bigTop {
-    width: 53px;
-    top: -33px;
-    right: -30px;
-}
-
-.star_smallTop {
-    width: 20px;
-    top: 28px;
-    right: -30px;
-}
-
-.star_bigBottom {
-    width: 53px;
-    bottom: -20px;
-    left: -31px
-}
-
-.star_smallBottom {
-    width: 20px;
-    bottom: 30px;
-    left: -30px;
-}
-
 .button_container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
 }
 
 .button_link {
@@ -86,15 +72,18 @@
     justify-content: center;
     background-color: #FFC6D9;
     border: none;
-    padding: 5px 10px;
+    padding: 5px 6px;
     border-radius: 10px;
     color: black;
 }
-
+.icon_button {
+    font-size: 14px;
+}
 .button_text {
     font-family: "KGSorry";
     font-weight: 100;
-    font-size: 15px;
+    font-size: 11px;
+    letter-spacing: 1px;
 }
 
 .button_link:hover {
@@ -106,12 +95,42 @@
 
 .project_image_container {
     position: relative;
-    width: 30%;
-    height: 90%;
     align-items: center;
     display: flex;
     justify-content: center;
 }
+
+
+.image_project {
+    height: 75px;
+    position: relative;
+    z-index: 1,
+}
+
+.star_bigTop {
+    width: 43px;
+    top: -15px;
+    right: -20px;
+}
+
+.star_smallTop {
+    width: 15px;
+    top: 35px;
+    right: -20px;
+}
+
+.star_bigBottom {
+    width: 43px;
+    bottom: -15px;
+    left: -20px
+}
+
+.star_smallBottom {
+    width: 15px;
+    bottom: 35px;
+    left: -20px;
+}
+
 
 @keyframes rotateAndScale {
     0% {
@@ -124,5 +143,151 @@
 
     100% {
         transform: scale(1) rotate(0deg);
+    }
+}
+
+/* mobile small */
+@media only screen and (min-width: 200px) and (max-width: 325px) {
+    .project_container_main {
+        height: 165px;
+ 
+    }
+    .project_title {
+        font-size: 25px;
+    }
+    .project_resume {
+        font-size: 12px;
+    }
+    .image_project {
+        height: 65px;
+    }
+}
+
+
+/* tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .project_container_main {
+        width: 80%;
+        height: 180px;
+    }
+    
+    .project_title {
+        font-size: 45px;
+    }
+    .project_resume {
+        font-size: 18px;
+    }
+    .project_text_container {
+        width: 55%;
+    }
+    .computer_buttons_cont_main {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+    .image_project {
+        height: 105px;
+    }
+    .container_on {
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+    }
+    .button_container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .button_text {
+        font-size: 15px;
+    }
+    .icon_button {
+        font-size: 20px;
+    }
+    .button_link {
+        gap: 5px;
+        padding: 5px 10px;
+    }
+    .star_bigTop {
+        width: 53px;
+        top: -33px;
+        right: -30px;
+    }
+    .star_smallTop {
+        width: 20px;
+        top: 28px;
+        right: -30px;
+    }
+    .star_bigBottom {
+        width: 53px;
+        bottom: -20px;
+        left: -31px
+    }
+    .star_smallBottom {
+        width: 20px;
+        bottom: 30px;
+        left: -30px;
+    }
+}
+
+@media only screen and (min-width: 1025px) { 
+    .project_container_main {
+        width: 80%;
+        height: 180px;
+    }
+    
+    .project_title {
+        font-size: 50px;
+    }
+    .project_resume {
+        font-size: 18px;
+    }
+    .project_text_container {
+        width: 55%;
+    }
+    .computer_buttons_cont_main {
+        display: flex;
+        flex-direction: row;
+    }
+    .image_project {
+        height: 125px;
+    }
+    .container_on {
+        align-items: center;
+        justify-content: space-between;
+        gap: 0px;
+    }
+    .button_container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .button_text {
+        font-size: 15px;
+    }
+    .icon_button {
+        font-size: 20px;
+    }
+    .button_link {
+        gap: 5px;
+        padding: 5px 10px;
+    }
+    .star_bigTop {
+        width: 53px;
+        top: -33px;
+        right: -30px;
+    }
+    .star_smallTop {
+        width: 20px;
+        top: 28px;
+        right: -30px;
+    }
+    .star_bigBottom {
+        width: 53px;
+        bottom: -20px;
+        left: -31px
+    }
+    .star_smallBottom {
+        width: 20px;
+        bottom: 30px;
+        left: -30px;
     }
 }

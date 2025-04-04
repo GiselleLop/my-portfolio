@@ -11,7 +11,7 @@ export const MenuHeader = React.forwardRef<HTMLInputElement, MenuHeaderProps>(
 	({ idRoute }) => {
 		const navigate = useNavigate();
 		const [activeButton, setActiveButton] = useState<string | null>(null);
-		const [isScrolled, setIsScrolled] = useState(false);
+		const [isScrolled, setIsScrolled] = useState<boolean>(false);
 
 		useEffect(() => {
 			setActiveButton(idRoute);

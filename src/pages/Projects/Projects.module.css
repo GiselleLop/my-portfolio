@@ -1,10 +1,32 @@
 .projects_main {
-    /* flex-direction: column;
-    height: 260vh;
-    gap: 2em; */
     flex-direction: column;
     height: max-content;
-    gap: 2em;
-    padding-top: 10%;
-    padding-bottom: 5%;
+    gap: 1.5em;
+    padding-top: 20%;
+    padding-bottom: 18%;
+}
+/* mobile small */
+@media only screen and (min-width: 200px) and (max-width: 325px) {
+    .projects_main {
+        gap: 1.5em;
+        padding-top: 23%;
+        padding-bottom: 15%;
+    }
+}
+
+/* tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .projects_main {
+        gap: 1.6em;
+        padding-top: 13%;
+        padding-bottom: 12%;
+    }
+}
+
+@media only screen and (min-width: 1025px) { 
+    .projects_main {
+        gap: 2em;
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
 }

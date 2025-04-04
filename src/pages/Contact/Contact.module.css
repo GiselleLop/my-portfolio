@@ -1,10 +1,31 @@
-/* .contact_main {
-    flex-direction: column;
-    height: max-content;
-    gap: 2em;
-    padding-top: 10%;
-    padding-bottom: 5%;
-} */
 .contact_main {
-    gap: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 5%;
+}
+
+/* mobile small */
+@media only screen and (min-width: 200px) and (max-width: 325px) {
+    .contact_main {
+        padding-top: 8%;
+        gap: 10px;
+    }
+}
+
+/* tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .contact_main {
+        padding-top: 0%;
+        gap: 35px;
+    }
+}
+
+@media only screen and (min-width: 1025px) { 
+    .contact_main {
+        flex-direction: row;
+        gap: 60px;
+        padding-top: 0;
+    }
+    
 }

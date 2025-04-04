@@ -154,7 +154,7 @@ export const ContactForm = React.forwardRef<HTMLInputElement, ContactFormProps>(
                     ) : (
                         <>
                         <h1 className={style.btn_text}>Send</h1>
-                        <i className="pi pi-send" style={{ fontSize: '15px', color: 'white' }}></i>
+                        <i className={`pi pi-send ${style.send_icon}`}></i>
                         </>
                     )}
                       
